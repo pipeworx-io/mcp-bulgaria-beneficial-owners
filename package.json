@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-bulgaria-beneficial-owners",
+  "version": "0.1.0",
+  "description": "bulgaria-beneficial-owners -- a Bulgarian legal entity's beneficial owners (действителни собственици), from the Registry Agency's (Agentsia po vpisvaniyata) Commercial Register and Register of Non-Profit Legal Entities.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-bulgaria-beneficial-owners": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bulgaria-beneficial-owners"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-bulgaria-beneficial-owners.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-1809a28037d1401302b7e667cf6d28d8e014da1ffa2cfaf51a31e7a2c3a52e6f",
+    "sourceCommit": "54bf7d1c06a0775508a65d0c388dd10ba75174c3"
+  }
+}
