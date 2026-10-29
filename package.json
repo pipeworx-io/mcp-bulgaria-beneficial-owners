@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-bulgaria-beneficial-owners",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "bulgaria-beneficial-owners -- a Bulgarian legal entity's beneficial owners (действителни собственици), from the Registry Agency's (Agentsia po vpisvaniyata) Commercial Register and Register of Non-Profit Legal Entities.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-bulgaria-beneficial-owners": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bulgaria-beneficial-owners"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-bulgaria-beneficial-owners.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/bulgaria-beneficial-owners",
   "pipeworx": {
-    "sourceHash": "v1-9af28ba0077a8a7f0c075f745ccf1019c396124b25fed7fad17d7a8e5a0774fb",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "bulgaria-beneficial-owners",
+    "gatewaySlug": "bulgaria-beneficial-owners",
+    "sourceHash": "v1-6ac7149f079ee39234e7edf9cb418779f1f608ce4f09a67cce8ae338e46531c3",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
