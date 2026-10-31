@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bulgaria-beneficial-owners",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "bulgaria-beneficial-owners -- a Bulgarian legal entity's beneficial owners (действителни собственици), from the Registry Agency's (Agentsia po vpisvaniyata) Commercial Register and Register of Non-Profit Legal Entities.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "bulgaria-beneficial-owners",
     "gatewaySlug": "bulgaria-beneficial-owners",
-    "sourceHash": "v1-6ac7149f079ee39234e7edf9cb418779f1f608ce4f09a67cce8ae338e46531c3",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-d80a5ecd0866793e33d32342fb7af29e4634dbda4998c42399829e1681428d52",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
